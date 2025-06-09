@@ -28,6 +28,12 @@ header a {
   margin: 0 auto;
 }
 
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .product-image img {
   width: 100%;
   max-height: 400px;
