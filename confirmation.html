@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="confirmation">
+      <h1>Thank you for your order!</h1>
+      <p id="user-info"></p>
+      <a href="index.html">Back to Home</a>
+    </main>
+
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get("name");
+      const email = params.get("email");
+
+      document.getElementById(
+        "user-info"
+      ).textContent = `A confirmation has been sent to ${email}, ${name}.`;
+    </script>
+  </body>
+</html>
